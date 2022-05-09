@@ -1441,7 +1441,7 @@ summary:hover{
 
 /* judging */
 
-.sub-header {
+.judging-sub-header {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -1450,7 +1450,7 @@ summary:hover{
   margin-top: 30px;
 }
 
-.details-sub-head {
+.judging-details-sub-head {
   color: #f6bb08;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -1458,32 +1458,76 @@ summary:hover{
   text-align: center;
 }
 
-.details-para {
-  padding: 0 15rem;
+.judging-details-para {
+  padding: 0 1rem;
   text-align: center;
   font-weight: 200;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .judging-details-para {
+    padding: 0 1rem;
+  }
+}
+
 
 /* rules */
 
-.details-para {
+.rules-sub-header {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 42px;
+  margin-top: 30px;
+}
+
+.rules-details-para {
   padding: 0 15rem;
-  /* text-align: center; */
+  text-align: center;
   font-weight: 200;
   margin-bottom: 35px;
   margin-top: 20px;
 }
-.rules{
+.rules-points{
   text-align: center;
-  margin: 10px;
+  padding: 0 10%;
 }
-.rules li {
+
+ol {
+  padding: 0;
+}
+
+.rules-points li {
   display: list-item;
-  margin-left: 40px;
-  /* text-align: center; */
   list-style-position:inside ;
   padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .rules-details-para {
+    padding: 0 10rem;
+  }
+
+  .rules-points {
+    padding: 0 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rules-details-para {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .rules-details-para {
+    padding: 0 15px;
+  }
+
+  .rules-points {
+    padding: 0 5%;
+  }
 }
